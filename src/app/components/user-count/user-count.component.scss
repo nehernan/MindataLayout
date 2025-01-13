@@ -1,0 +1,26 @@
+@import "../../../assets/scss/settings/color";
+@import "../../../assets/scss/settings/fonts";
+
+.c_user {
+    &--count {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 58px;
+        width: 100%;
+        padding: 0 1rem;
+        background-color: $whiteFB;
+        &--link {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: $font-w-xbold;
+            font-size: $f_xs;
+            color: $black000;
+        }
+        .p_info {
+            font-weight: $font-w-bold;
+            font-size: $f_xs;
+            text-transform: uppercase;
+        }
+    }
+}

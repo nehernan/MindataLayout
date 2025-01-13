@@ -1,0 +1,39 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+// Configuración
+@import "settings/color";
+@import "settings/fonts";
+@import "settings/breakpoints";
+
+// Herramientas
+@import "tools/mixins";
+
+// Estilos genericos
+@import "reset/reset";
+
+// Elementos
+@import "elements/heading";
+@import "elements/paragraphs";
+
+// Objetos
+@import "objects/buttons";
+
+// Urilidades
+@import "utilities/containers";
+@import "utilities/grid";
+
+body {
+  background-color: $background-color;
+  font-family: $font-base;
+  
+}
+
+::-webkit-scrollbar {
+  width: 5px; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d0d0d0; 
+  border-radius: 5px; 
+}
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}

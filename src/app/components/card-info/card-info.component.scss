@@ -1,0 +1,9 @@
+@import "../../../assets/scss/settings/color";
+.c_card {
+    &--info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        margin-bottom: 1.5rem;
+    }
+} 

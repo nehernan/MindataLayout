@@ -1,0 +1,14 @@
+<app-card [customClass]="'card-primary_hidden'">
+    <div class="card_item--profile">
+        <div class="card_item--banner">
+            <img src="{{user.imgBanner}}" alt="{{user.imgBannerAlt}}">
+        </div>
+        <div class="card_item--profile--info">
+            <app-user-info [customClass]="'c_user--col'"[userName]="user.userName" [userProfession]="user.userProfession" [userImage]="user.userImage ?? ''" [userLinkHistory]="user.userLinkHistory"></app-user-info>
+            <div class="card_item--btns">
+                <button class="btn btn-dark btn-dark--outline btn-xs">BUTTON</button>
+                <button class="btn btn-dark btn-xs">BUTTON</button>
+            </div>
+        </div>
+    </div>
+</app-card>

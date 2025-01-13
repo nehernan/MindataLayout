@@ -1,0 +1,16 @@
+<div [class]="customClass">
+    <div class="c_user--profile--img" [ngClass]="{'isActive': userLinkHistoryActive, 'noActive': !userLinkHistoryActive}">
+        <a href="{{ userLinkHistory || '#' }}" class="c_user--profile--img--link">
+            <img *ngIf="userImage; else defaultIcon" [src]="userImage" alt="img_profile">
+            <ng-template #defaultIcon>
+                <div class="img_default">
+                    <img [src]="defaultIcon" alt="default_profile_icon" />
+                </div>
+            </ng-template>
+        </a>
+    </div>
+    <div class="c_user--profile--text">
+        <p class="title_info">{{ userName }}</p>
+        <p class="p_info">{{ userProfession }}</p>
+    </div>
+</div>

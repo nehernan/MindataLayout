@@ -1,0 +1,18 @@
+@import "/src/assets/scss/main.scss";
+
+.card_bg {
+    background-color: $white;
+    border-radius: 20px;
+    height: max-content;
+    min-width: 100%;
+}
+
+.card {
+    &-primary {
+        @extend .card_bg;
+        &_hidden {
+            overflow-y: hidden;
+           @extend .card_bg;
+        }
+    }
+}

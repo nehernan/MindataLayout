@@ -1,0 +1,24 @@
+.f_center--center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.g_ {
+    &row{
+      @extend .f_center--center;
+      flex-wrap: nowrap;
+    }
+    &col {
+     width: 100%;
+     /*  &- */
+     &-4  {
+         width: 25%;
+         
+        }
+       &-sm{
+             min-width: 100%;
+    
+         }
+    }
+}

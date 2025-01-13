@@ -1,0 +1,34 @@
+<app-card customClass="card-primary" class="card">
+  <div class="card_food">
+    <div class="card_food--header">
+      <div class="card_food--header--title">
+        <h3>{{ food.title }}</h3>
+      </div>
+      <div class="card_food--header--links">
+            <!-- <app-svg-icon iconId="fire-solid" color="red"></app-svg-icon>
+            <app-svg-icon iconId="icFire" color="red"></app-svg-icon>  -->
+        <app-btn-link-icon [linkAction]="'https://www.example.com'" [iconImg]="'/assets/images/icons/leaf-solid.svg'" [customClass]="'ic-color'"></app-btn-link-icon>
+        <app-btn-link-icon [linkAction]="'https://www.example.com'" [iconImg]="'/assets/images/icons/fire-solid-white.svg'" [customClass]="'ic-color--fire'"></app-btn-link-icon>
+      </div>
+    </div>
+    <div class="card_food--body">
+      <div class="card_food--body--img">
+        <img src="{{ food.imgBanner }}" alt="{{ food.imgBannerAlt }}" />
+      </div>
+      <div class="card_food--body--text">
+        {{ food.textCard }}
+      </div>
+    </div>
+    <div class="card_food--footer">
+      <div class="card_food--footer--price">
+        <p class="card_food--footer--price--now">${{ priceNowFormatted }}</p>
+        <p class="card_food--footer--price--before">
+          ${{ priceBeforeFormatted }}
+        </p>
+      </div>
+      <a [href]="food.foodLink" class="btn btn-dark--outline btn-xs f-w-600">{{
+        food.foodLinkText
+      }}</a>
+    </div>
+  </div>
+</app-card>

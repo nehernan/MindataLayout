@@ -1,0 +1,20 @@
+@import "../../../.././../assets/scss/settings/fonts";
+@import "../../../.././../assets/scss/settings/color";
+
+.btn_link--custom {
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: $f_sm;
+    font-weight: $font-w-600;
+    color: $white;
+    background-color: $bg-FG1;
+  &:hover {
+    background-color: $bg-BB1;
+  }
+}

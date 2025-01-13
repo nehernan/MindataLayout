@@ -1,0 +1,26 @@
+@import "../../../../../assets/scss/settings/color";
+
+.btn_link--icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+    .svg-icon {
+      width: 14px;
+      height: 14px;
+    }
+    svg {
+      fill: currentColor; 
+    }
+}
+
+.ic-color {
+  background-color: $secondary-color;
+  color: red;
+  &--fire {
+    background-color: $bg-F85;
+  }
+} 

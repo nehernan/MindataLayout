@@ -1,0 +1,12 @@
+
+.f_center--center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.c_fluid {
+    width: 100%;
+    padding: .5rem;
+    @extend .f_center--center;
+}

@@ -1,0 +1,105 @@
+@import "../../../assets/scss/settings/color";
+@import "../../../assets/scss/settings/fonts";
+@import "../../../assets/scss/settings/breakpoints";
+
+
+.card {
+  &_food {
+    width: 100%;
+    &--header {
+      padding: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--title {
+        display: -webkit-box; 
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical; 
+        display: -moz-box; 
+        -moz-line-clamp: 1; 
+        -moz-box-orient: vertical; 
+        display: box; 
+        line-clamp:1; 
+        box-orient: vertical; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+      }
+      &--links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.25rem;
+      }
+    }
+    &--body {
+      &--img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        background-color: $bg-banner;
+        overflow: hidden;
+        img {
+          object-fit:cover;
+          width: 100%;
+          height: auto;
+        }
+      }
+      &--text {
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.2;
+        display: block;
+        height: 80px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: $f_sm;
+        font-weight: $font-w-regular;
+      }
+    }
+    &--footer {
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--price {
+        display: flex;
+        align-items: center;
+        gap: 0.35em;
+        &--now {
+          color: $black000;
+          font-weight: $font-w-xbold;
+          font-size: $f_lg;
+        }
+        &--before {
+          color: $red;
+          font-size: $f_sm;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 7px;
+            width: 100%;
+            height: 1px;
+            background-color: $red;
+          }
+        }
+      }
+      a.btn  {
+        height: 36px;
+        padding: 0 1rem;
+        font-weight: $font-w-xbold;
+      }
+    }
+  }
+}
+
+
+.icon-wrapper {
+  font-size: 2rem; /* Controla el tamaño del ícono */
+  color: green; /* Cambia el color del ícono */
+}

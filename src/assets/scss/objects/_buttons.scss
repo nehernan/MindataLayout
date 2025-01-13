@@ -1,0 +1,117 @@
+/* .btn {
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  width: 100%;
+  min-height: 24px;
+  /* &-sm {
+    max-height: 24px;
+    font-size: .8rem;
+    a {
+      font-size: .8rem;
+      min-height: inherit;
+     }
+  } 
+  &-base {
+    background-color: blue;
+    color: white;
+    &:hover {
+      background-color: red
+    }
+    a {
+     @extend .btn-base;
+    }
+  }
+  &-alert {
+    background-color: red;
+    color: white;
+    a {
+      @extend .btn-alert;
+     }
+  }
+  &-outline {
+    border: 1px solid black;
+    a {
+      @extend .btn-outline;
+     }
+  }
+}
+button {
+  border: 0px;
+  box-sizing: border-box;
+}
+ */
+
+@import "../settings/color";
+@import "../settings/fonts";
+
+.btn-border {
+  border: 2px solid;
+}
+.btn {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .3rem .5rem;
+  text-decoration: none;
+  cursor: pointer;
+  &-base {
+    color: $white;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    @extend .btn-border;
+    &:hover{
+      filter: brightness(90%);
+    }
+    &--outline {
+      color: $primary-color;
+      background-color: $white;
+      border-color: $primary-color;
+      @extend .btn-border;
+      &:hover{
+        filter: brightness(90%);
+      }
+    }
+  }
+  &-dark {
+    color: $white;
+    background-color: $black000;
+    border-color: $black000;
+    font-weight: $font-w-xbold;
+    @extend .btn-border;
+    &:hover{
+      filter: brightness(90%);
+    }
+    &--outline {
+      color: $black000;
+      background-color: $white;
+      border-color: $black000;
+      @extend .btn-border;
+      &:hover{
+        filter: brightness(90%);
+      }
+    }
+  }
+  &-xs {
+    font-size: $f_xs;
+    max-width: max-content;
+  }
+  &-sm {
+    font-size: $f_sm;
+    min-width: 50%;
+  }
+  &-md {
+    padding: .2rem .35rem;
+    font-size: $f_md;
+    min-width: 75%;
+  }
+  &-lg {
+    padding: .2rem .35rem;
+    font-size: $f_lg;
+    min-width: 100%;
+  }
+}

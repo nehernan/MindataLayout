@@ -1,0 +1,14 @@
+<app-card [customClass]="'card-primary_hidden'">
+    <div class="card_ui">
+        <div class="card_ui--banner">
+            <img src="{{imgBanner}}" alt="{{imgBannerAlt}}">
+        </div> 
+        <div class="card_ui--info">
+            <div class="card_ui--info--text">
+                <h3>{{ title }}</h3>
+                <p>{{ textInfo }}</p>
+            </div>
+            <app-btn-link-custom [linkText]="linkText" [linkAction]="linkAction"></app-btn-link-custom>
+        </div>
+    </div>
+</app-card>

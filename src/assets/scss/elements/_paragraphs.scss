@@ -1,0 +1,11 @@
+@import "../settings/color";
+@import "../settings/fonts";
+.title_info{
+    color: $black000;
+    font-size: $f_md;
+    font-weight: $font-w-xbold;
+}
+.p_info{
+    color: $greyB0;
+    font-size: $f_sm;
+}

@@ -1,0 +1,11 @@
+<div
+  class="icon-wrapper"
+  [ngStyle]="{ width: size + 'px', height: size + 'px' }"
+>
+  <ng-container *ngIf="iconPath; else noIcon">
+    <img [src]="iconPath" [alt]="iconName" [style.fill]="color" />
+  </ng-container>
+  <ng-template #noIcon>
+    <p>Icon not found: {{ iconName }}</p>
+  </ng-template>
+</div>

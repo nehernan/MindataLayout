@@ -1,0 +1,15 @@
+@import "../settings/color";
+
+
+h1 {
+  @include title(3rem, "Roboto, sans-serif", $black000);
+}
+
+h2 {
+  @include title(2.5rem, "Roboto, sans-serif", $black000);
+}
+
+h3 {
+  @include title(1.7rem); // Usa los valores predeterminados del mixin
+  line-height: 1.1;
+}
