@@ -14,6 +14,8 @@ interface User {
   styleUrls: ['./card-list-user.component.scss']
 })
 export class CardListUserComponent implements OnInit {
+  title: string = 'Minimum dolorin';
+  textInfo: string = 'Este texto se genera dinámicamente desde el componente'; 
 
   users: User [] = [
     { userName: 'John Doe',  userProfession: 'Dog Trainer',      linkProfil: '', userImage: '../../../assets/images/users/imgProfile05.png',},

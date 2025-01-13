@@ -1,5 +1,25 @@
-.layout {
+@import "../../assets/scss/settings/breakpoints";
+
+main.layout {
   display: grid;
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 2rem;
   padding: 2rem;
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  main.layout {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+}
+@media only screen and (min-device-width: $breakpoint-xs) and (max-device-width: $breakpoint-sm) {
+  main.layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
 }

@@ -1,6 +1,6 @@
 <app-card  [customClass]="'card-primary_hidden'">
     <div class="card_list">
-        <app-card-info class="card_list--user--title" title="Titulo de card" textInfo="texto de card"></app-card-info>
+        <app-card-info class="card_list--user--title" [title]="title" [textInfo]="textInfo"></app-card-info>
         <div class="card_list--user">
             <div *ngFor="let user of users" class="card_list--user--profil">
                 <app-user-info [customClass]="'c_user'" [userName]="user.userName" [userProfession]="user.userProfession" [userImage]="user.userImage ?? ''"></app-user-info>

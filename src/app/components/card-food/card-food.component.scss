@@ -47,7 +47,7 @@
       }
       &--text {
         padding: 1.5rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
         line-height: 1.2;
         display: block;
         height: 80px;
@@ -99,7 +99,16 @@
 }
 
 
-.icon-wrapper {
-  font-size: 2rem; /* Controla el tamaño del ícono */
-  color: green; /* Cambia el color del ícono */
+/* .icon-wrapper {
+  font-size: 2rem;
+  color: green;
+}
+ */
+
+@media only screen and (min-device-width: $breakpoint-xs) and (max-device-width: $breakpoint-sm) {
+  .card_food--body--img img {
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+  }
 }
