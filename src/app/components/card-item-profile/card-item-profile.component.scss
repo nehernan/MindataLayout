@@ -1,4 +1,5 @@
 @import "../../../assets/scss/settings/color";
+@import "../../../assets/scss/settings/fonts";
 .card {
   &_item {
     &--profile {
@@ -28,7 +29,7 @@
         width: 100%;
         height: 100%;
         display: block;
-        background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.3), transparent);
+        background-image: linear-gradient(to top,  rgba(0, 0, 0, 0.2), transparent);
       }
     }
     &--btns {

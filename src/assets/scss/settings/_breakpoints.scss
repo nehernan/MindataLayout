@@ -1,29 +1,4 @@
+$breakpoint-xs: 320px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
-
-/* @use 'sass:math';
-
-@mixin respond-to($breakpoint) {
-  @media (min-width: $breakpoint) {
-    @content;
-  }
-}
-
-@include respond-to($breakpoint-sm) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@include respond-to($breakpoint-md) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@include respond-to($breakpoint-lg) {
-  .container {
-    max-width: 960px;
-  }
-} */
